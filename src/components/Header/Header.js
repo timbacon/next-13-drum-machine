@@ -3,7 +3,7 @@ import React from 'react';
 import { Volume2, VolumeX } from 'react-feather';
 
 import MaxWidthWrapper from '../MaxWidthWrapper';
-import { SoundEnabledContext } from '../SoundEnabledProvider/SoundEnabledProvider';
+import { SoundEnabledContext } from '../SoundEnabledProvider';
 import VisuallyHidden from '../VisuallyHidden';
 import styles from './Header.module.css';
 

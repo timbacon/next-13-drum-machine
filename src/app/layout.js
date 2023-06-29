@@ -2,7 +2,7 @@ import React from 'react';
 
 import Header from '../components/Header';
 
-import SoundEnabledProvider from '../components/SoundEnabledProvider/SoundEnabledProvider';
+import SoundEnabledProvider from '../components/SoundEnabledProvider';
 import './styles.css';
 
 function RootLayout({ children }) {
@@ -12,11 +12,11 @@ function RootLayout({ children }) {
                 <SoundEnabledProvider>
                     <Header />
                     {children}
+                    <footer>
+                        <img src='/ie-badge.gif' width={100} />
+                        <span>Thanks for visiting!</span>
+                    </footer>
                 </SoundEnabledProvider>
-                <footer>
-                    <img src='/ie-badge.gif' width={100} />
-                    <span>Thanks for visiting!</span>
-                </footer>
             </body>
         </html>
     );
